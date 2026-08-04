@@ -6,7 +6,7 @@ class Solution {
             map.put(num,map.getOrDefault(num,0)+1);
         }
         List<Integer> ans=new ArrayList<>();
-        for(int i=nums[0];i<=nums[nums.length-1];i++){
+        for(int i=nums[0];i<nums[nums.length-1];i++){
             if(!map.containsKey(i))ans.add(i);
         } 
         return ans;
